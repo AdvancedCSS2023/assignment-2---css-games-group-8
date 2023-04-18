@@ -18,11 +18,21 @@ h1 {
     margin: 20px;
 }
 
+h2 {
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    margin: 40px;
+}
+
 p {
     text-align: center;
     font-size: 1.5em;
     color: white;
-    margin: 20px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 80%;
+    
 }
 
 .inline {
