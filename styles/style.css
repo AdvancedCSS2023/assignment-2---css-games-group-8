@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.inline {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    background-color: white;
+
+}
