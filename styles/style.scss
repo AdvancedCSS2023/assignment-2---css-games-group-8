@@ -8,7 +8,6 @@ $primaryGreen: #658932;
 body {
     font-family: 'Roboto', sans-serif;
     background-color: $primaryGreen;
-    color: white;
 }
 
 h1 {
@@ -28,7 +27,6 @@ h2 {
 p {
     text-align: center;
     font-size: 1.5em;
-    color: white;
     margin: 0 auto;
     padding: 30px;
     width: 80%;
@@ -48,4 +46,20 @@ nav {
     margin-top: 20px;
     background-color: white;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 }
