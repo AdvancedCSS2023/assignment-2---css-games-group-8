@@ -97,14 +97,6 @@ main {
   transform: rotateY(180deg);
 }
 
-.box:hover .content {
-  display: none;
-}
-
-.box:hover .answer {
-  display: block;
-}
-
 .content,
 .answer {
   position: absolute;
@@ -125,4 +117,29 @@ main {
 
 .correct-answer {
   color: green;
+}
+
+.box.locked {
+  transform: rotateY(180deg);
+  cursor: default;
+}
+
+.box.locked .content {
+  display: none;
+}
+
+.box.locked .answer {
+  display: block;
+}
+
+.box.locked:hover {
+  cursor: default;
+}
+
+.box.locked:hover .content {
+  display: none;
+}
+
+.box.locked:hover .answer {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
