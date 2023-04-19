@@ -51,7 +51,7 @@ img {
   margin: 0 auto;
 }
 
-main {
+.question {
   text-align: center;
   margin: 0 auto;
   padding: 20px;
@@ -97,6 +97,14 @@ main {
 
 .box:hover {
   transform: rotateY(180deg);
+}
+
+.box:hover .content {
+  display: none;
+}
+
+.box:hover .answer {
+  display: block;
 }
 
 .content,
