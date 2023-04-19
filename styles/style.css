@@ -121,4 +121,8 @@ main {
 .answer {
   display: none;
   transform: rotateY(180deg);
+}
+
+.correct-answer {
+  color: green;
 }/*# sourceMappingURL=style.css.map */
