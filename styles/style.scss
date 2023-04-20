@@ -32,7 +32,7 @@ p {
   width: 80%;
 }
 
-.inline {
+.site-nav__item {
   display: inline-block;
   list-style-type: none;
   margin: 0 auto;
@@ -52,12 +52,12 @@ img {
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section {
+.site-main__section {
   width: 80%;
   height: 100%;
   background-color: white;
@@ -100,11 +100,11 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 24px;
   color: #333333;
-  transition: transform 0.6s;
+  transition: transform 1s;
   transform-style: preserve-3d;
 }
 
-.box.answer {
+.box--answer {
   background-color: #cccccc;
   font-size: 16px;
   color: #ffffff;
@@ -116,16 +116,16 @@ main {
   transform: rotateY(180deg);
 }
 
-.box:hover .content {
+.box:hover .box__content {
   display: none;
 }
 
-.box:hover .answer {
+.box:hover .box__answer {
   display: block;
 }
 
-.content,
-.answer {
+.box__content,
+.box__answer {
   position: absolute;
   top: 0;
   left: 0;
@@ -137,37 +137,37 @@ main {
   line-height: 1.5;
 }
 
-.answer {
+.box__answer {
   display: none;
   transform: rotateY(180deg);
 }
 
-.correct-answer {
+.box__answer-text--correct {
   color: green;
 }
 
-.box.locked {
+.box--locked {
   transform: rotateY(180deg);
   cursor: default;
 }
 
-.box.locked .content {
+.box--locked .box__content {
   display: none;
 }
 
-.box.locked .answer {
+.box--locked .box__answer {
   display: block;
 }
 
-.box.locked:hover {
+.box--locked:hover {
   cursor: default;
 }
 
-.box.locked:hover .content {
+.box--locked:hover .box__content {
   display: none;
 }
 
-.box.locked:hover .answer {
+.box--locked:hover .box__answer {
   display: block;
 }
 
@@ -185,6 +185,6 @@ main {
   font-size: 24px;
 }
 
-.win-screen.show {
+.win-screen--show {
   display: block;
 }
