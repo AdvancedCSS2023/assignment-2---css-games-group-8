@@ -1,0 +1,21 @@
+@mixin FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+    @include FlexCenter;
+    position: relative;
+    width: 45%;
+    height: 45%;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    color: black;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+  }
+  
