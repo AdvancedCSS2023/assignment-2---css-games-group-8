@@ -1,18 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game page</title>
-    <link rel="stylesheet" href="/assignment-2---css-games-group-8/styles/style.css">
-</head>
-<body>
-    <nav> 
-        <ul>
-            <li class="inline"><a href="index.html">Home</a></li>
-            <li class="inline"><a href="game.html">Game</a></li>
-        </ul>
+    <link
+      rel="stylesheet"
+      href="/assignment-2---css-games-group-8/styles/style.css"
+    />
+    <script src="script.js" async></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="inline"><a href="index.html">Home</a></li>
+        <li class="inline"><a href="game.html">Game</a></li>
+      </ul>
     </nav>
-</body>
+    <header>
+      <h1>Endangered Animals | Can You Name Them All?</h1>
+    </header>
+    <div class="question">
+      <h2>What animal is this?</h2>
+      <img
+        src="images/pixelated-tiger.png"
+        alt="A picture of a tiger pixelated"
+      />
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <div class="content"><p>Lion</p></div>
+        <div class="answer"><p>Wrong, this is not a lion.</p></div>
+      </div>
+      <div class="box correct">
+        <div class="content"><p>Tiger</p></div>
+        <div class="answer">
+          <p class="correct-answer">
+            Correct, this is the Sunda Island tiger. Which is sadly endangered.
+            There is only 400 left.
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="content"><p>Cheetah</p></div>
+        <div class="answer"><p>Wrong, this is not a cheetah.</p></div>
+      </div>
+      <div class="box">
+        <div class="content"><p>Leopard</p></div>
+        <div class="answer"><p>Wrong, this not a leopard.</p></div>
+      </div>
+    </div>
+
+    <div class="question" style="margin-top: 100px">
+      <h2>What animal is this?</h2>
+      <img
+        src="images/pixelated-rhino.png"
+        alt="A picture of a rhino pixelated"
+      />
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <div class="content"><p>Tapir</p></div>
+        <div class="answer"><p>Wrong, this is not a tapir.</p></div>
+      </div>
+
+      <div class="box correct">
+        <div class="content"><p>Rhino</p></div>
+        <div class="answer">
+          <p class="correct-answer">
+            This is the Javan rhino. It is critically endangered. Only 67 remain
+          </p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content"><p>Hippo</p></div>
+        <div class="answer"><p>Wrong, this is not a hippo.</p></div>
+      </div>
+
+      <div class="box">
+        <div class="content"><p>Walrus</p></div>
+        <div class="answer">
+          <p>wrong this is not a walrus</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="question" style="margin-top: 100px">
+      <h2>What animal is this?</h2>
+      <img
+        src="images/pixelated-elephant.png"
+        alt="A picture of a elephant pixelated"
+      />
+    </div>
+
+    <div class="container">
+      <div class="box">
+        <div class="content"><p>Panda</p></div>
+        <div class="answer"><p>Wrong, this is not a panda.</p></div>
+      </div>
+
+      <div class="box">
+        <div class="content"><p>Rhino</p></div>
+        <div class="answer">
+          <p class="correct-answer">Wrong, this is not a rhino.</p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="content"><p>Gorilla</p></div>
+        <div class="answer"><p>Wrong, this is not a gorilla.</p></div>
+      </div>
+
+      <div class="box correct">
+        <div class="content"><p>Elephant</p></div>
+        <div class="answer">
+          <p class="correct-answer">
+            This is the african forest elephant. Following population declines
+            over several decades due to poaching for ivory and loss of habitat,
+            the African forest elephant is now listed as critically endangered.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="win-screen">
+      <h1>You Win</h1>
+      <p>You have answered all the questions correctly, congratulations!</p>
+    </div>
+  </body>
 </html>
