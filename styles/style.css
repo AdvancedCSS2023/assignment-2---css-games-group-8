@@ -150,4 +150,30 @@ img {
 
 .box.locked:hover .answer {
   display: block;
+}
+
+.win-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+  font-size: 24px;
+}
+
+.win-screen h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.win-screen img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

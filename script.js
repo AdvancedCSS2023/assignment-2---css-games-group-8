@@ -1,8 +1,8 @@
-const boxes = document.querySelectorAll('.box');
-const correctBox = document.querySelector('.box.correct');
+const correctBoxes = document.querySelectorAll('.box.correct');
 
-correctBox.addEventListener('mouseover', function() {
-  correctBox.classList.add('locked');
-  
+correctBoxes.forEach(function(correctBox) {
+  correctBox.addEventListener('mouseover', function() {
+    correctBox.classList.add('locked');
+  });
 });
 
