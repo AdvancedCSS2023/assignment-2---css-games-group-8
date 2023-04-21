@@ -11,6 +11,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 24px;
     color: black;
+    cursor: pointer;
     transition: transform 1s;
     transform-style: preserve-3d;
   }
@@ -26,6 +27,7 @@
 
 .box:hover {
   transform: rotateY(180deg);
+
 }
 
 .box:hover .box__content {

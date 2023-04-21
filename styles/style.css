@@ -11,6 +11,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
   font-size: 24px;
   color: black;
+  cursor: pointer;
   transition: transform 1s;
   transform-style: preserve-3d;
 }
@@ -107,9 +108,9 @@ h2 {
 }
 
 p {
+  margin: 0 auto;
   text-align: center;
   font-size: 24px;
-  margin: 0 auto;
   padding: 30px;
   width: 80%;
 }
@@ -151,8 +152,8 @@ main {
 }
 
 .question {
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
   padding: 20px;
   width: 80%;
   background-color: white;
@@ -183,5 +184,22 @@ main {
 }
 
 .win-screen--show {
+  display: block;
+}
+
+.lose-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.lose-screen--show {
   display: block;
 }/*# sourceMappingURL=style.css.map */
