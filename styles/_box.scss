@@ -1,7 +1,7 @@
 @import "./mixins.scss";
 
 .box {
-    @include FlexCenter;
+    @include flexCenter;
     position: relative;
     width: 45%;
     height: 45%;

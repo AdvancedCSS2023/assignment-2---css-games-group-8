@@ -151,6 +151,17 @@ main {
   border-radius: 10px;
 }
 
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  margin: 25px;
+  border-radius: 10px;
+}
+
 .question {
   margin: 0 auto;
   text-align: center;
