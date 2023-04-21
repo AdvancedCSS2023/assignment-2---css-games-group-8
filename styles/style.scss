@@ -1,4 +1,5 @@
 @import "./box";
+@import "./mixins";
 
 $primaryGreen: #658932;
 
@@ -27,9 +28,8 @@ h2 {
 }
 
 p {
-  text-align: center;
+  @include center;
   font-size: 24px;
-  margin: 0 auto;
   padding: 30px;
   width: 80%;
 }
@@ -70,9 +70,17 @@ main {
   border-radius: 10px;
 }
 
+.intro  {
+  @include flexCenter;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  margin: 20px;
+  border-radius: 10px;  
+}
+
 .question {
-  text-align: center;
-  margin: 0 auto;
+  @include center;
   padding: 20px;
   width: 80%;
   background-color: white;
@@ -89,74 +97,6 @@ main {
   height: 100vh;
 }
 
- 
-.box--answer {
-  background-color: #cccccc;
-  font-size: 16px;
-  color: #ffffff;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-}
-
-.box:hover {
-  transform: rotateY(180deg);
-}
-
-.box:hover .box__content {
-  display: none;
-}
-
-.box:hover .box__answer {
-  display: block;
-}
-
-.box__content,
-.box__answer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backface-visibility: hidden;
-  text-align: center;
-  padding: 20px;
-  line-height: 1.5;
-}
-
-.box__answer {
-  display: none;
-  transform: rotateY(180deg);
-}
-
-.box__answer-text--correct {
-  color: green;
-}
-
-.box--locked {
-  transform: rotateY(180deg);
-  cursor: default;
-}
-
-.box--locked .box__content {
-  display: none;
-}
-
-.box--locked .box__answer {
-  display: block;
-}
-
-.box--locked:hover {
-  cursor: default;
-}
-
-.box--locked:hover .box__content {
-  display: none;
-}
-
-.box--locked:hover .box__answer {
-  display: block;
-}
-
 .win-screen {
   display: none;
   position: fixed;
@@ -167,10 +107,26 @@ main {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   text-align: center;
-  padding: 50px;
   font-size: 24px;
 }
 
 .win-screen--show {
-    display: block;
-  }
+  display: block;
+}
+
+.lose-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.lose-screen--show {
+  display: block;
+}

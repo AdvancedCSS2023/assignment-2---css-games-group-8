@@ -1,11 +1,7 @@
-@mixin FlexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@import "./mixins.scss";
 
 .box {
-    @include FlexCenter;
+    @include flexCenter;
     position: relative;
     width: 45%;
     height: 45%;
@@ -15,7 +11,77 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 24px;
     color: black;
+    cursor: pointer;
     transition: transform 1s;
     transform-style: preserve-3d;
   }
+
+  
+.box--answer {
+  background-color: #cccccc;
+  font-size: 16px;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+
+.box:hover {
+  transform: rotateY(180deg);
+
+}
+
+.box:hover .box__content {
+  display: none;
+}
+
+.box:hover .box__answer {
+  display: block;
+}
+
+.box__content,
+.box__answer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.box__answer {
+  display: none;
+  transform: rotateY(180deg);
+}
+
+.box__answer-text--correct {
+  color: green;
+}
+
+.box--locked {
+  transform: rotateY(180deg);
+  cursor: default;
+}
+
+.box--locked .box__content {
+  display: none;
+}
+
+.box--locked .box__answer {
+  display: block;
+}
+
+.box--locked:hover {
+  cursor: default;
+}
+
+.box--locked:hover .box__content {
+  display: none;
+}
+
+.box--locked:hover .box__answer {
+  display: block;
+}
   
