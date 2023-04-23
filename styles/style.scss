@@ -2,6 +2,7 @@
 @import "./mixins";
 
 $primaryGreen: #45af4d;
+$smokegray: #474747;
 
 
 * {
@@ -37,14 +38,24 @@ p {
 
 nav {
   text-align: center;
-  background-color: white;
+  background-color: $smokegray;
   
   .site-nav__item {
     display: inline-block;
     list-style-type: none;
     margin: 0 auto;
-    padding: 10px;
+    padding: 25px 60px;
     font-size: 20px;
+    ;
+    a {
+      text-decoration: none;
+      color: #E8E4D6;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: $primaryGreen;
+    }
+
   }
 }
 
@@ -109,6 +120,15 @@ main {
   color: white;
   text-align: center;
   font-size: 24px;
+
+  a {
+    text-decoration: underline;
+    color: #E8E4D6;
+  }
+  a:hover {
+    text-decoration: underline overline;
+    color: $primaryGreen;
+  }
 }
 
 .win-screen--show {
@@ -126,6 +146,15 @@ main {
   color: white;
   text-align: center;
   font-size: 24px;
+
+  a {
+    text-decoration: underline;
+    color: #E8E4D6;
+  }
+  a:hover {
+    text-decoration: underline overline;
+    color: $primaryGreen;
+  }
 }
 
 .lose-screen--show {

@@ -117,14 +117,22 @@ p {
 
 nav {
   text-align: center;
-  background-color: white;
+  background-color: #474747;
 }
 nav .site-nav__item {
   display: inline-block;
   list-style-type: none;
   margin: 0 auto;
-  padding: 10px;
+  padding: 25px 60px;
   font-size: 20px;
+}
+nav .site-nav__item a {
+  text-decoration: none;
+  color: #E8E4D6;
+}
+nav .site-nav__item a:hover {
+  text-decoration: underline;
+  color: #45af4d;
 }
 
 img {
@@ -191,6 +199,14 @@ main .site-main__section {
   text-align: center;
   font-size: 24px;
 }
+.win-screen a {
+  text-decoration: underline;
+  color: #E8E4D6;
+}
+.win-screen a:hover {
+  text-decoration: underline overline;
+  color: #45af4d;
+}
 
 .win-screen--show {
   display: block;
@@ -207,6 +223,14 @@ main .site-main__section {
   color: white;
   text-align: center;
   font-size: 24px;
+}
+.lose-screen a {
+  text-decoration: underline;
+  color: #E8E4D6;
+}
+.lose-screen a:hover {
+  text-decoration: underline overline;
+  color: #45af4d;
 }
 
 .lose-screen--show {
