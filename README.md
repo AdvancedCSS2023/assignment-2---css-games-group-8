@@ -19,8 +19,8 @@ If users need help with the project, they can refer to the instructions provided
 
 Which technology is used?
 
-The technology used for this project includes HTML, CSS, and SCSS, with some JavaScript used to improve the game's functionality. The team behind the project has made an effort to minimize the use of JavaScript, focusing instead on HTML and CSS.
+The technology used for this project includes HTML, CSS, and SCSS, with some JavaScript used to improve the game's functionality. The team behind the project has made an effort to minimize the use of JavaScript, focusing instead on HTML, CSS, and SCSS/SASS.
 
-Who maintains and contributes to the project?
+The maintains and contributes to the project?
 
-The project is maintained by Sebastian Haugen, Gard Heimly and Helin
+The project is maintained by Sebastian Haugen, Gard Heimly, and Helin Sagvan Abuzed
