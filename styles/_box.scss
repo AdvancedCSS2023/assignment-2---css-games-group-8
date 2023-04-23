@@ -84,4 +84,8 @@
 .box--locked:hover .box__answer {
   display: block;
 }
-  
+
+.wrong-animal {
+  color: red;
+  text-decoration: underline;
+}
