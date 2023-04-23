@@ -90,7 +90,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #658932;
+  background-color: #45af4d;
   color: white;
 }
 
@@ -115,17 +115,16 @@ p {
   width: 80%;
 }
 
-.site-nav__item {
+nav {
+  text-align: center;
+  background-color: white;
+}
+nav .site-nav__item {
   display: inline-block;
   list-style-type: none;
   margin: 0 auto;
   padding: 10px;
   font-size: 20px;
-}
-
-nav {
-  text-align: center;
-  background-color: white;
 }
 
 img {
@@ -139,8 +138,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
-.site-main__section {
+main .site-main__section {
   width: 80%;
   height: 100%;
   background-color: white;
